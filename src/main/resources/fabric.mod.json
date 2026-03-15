@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "client-reconnect",
+  "version": "${version}",
+  "name": "Client-reconnect",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/client-reconnect/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.simohaya.clientReconnect.client.ClientReconnectClient"
+    ],
+    "main": [
+      "net.simohaya.clientReconnect.ClientReconnect"
+    ]
+  },
+  "mixins": [
+    "client-reconnect.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
