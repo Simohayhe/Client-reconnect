@@ -2,19 +2,18 @@
   "schemaVersion": 1,
   "id": "client-reconnect",
   "version": "${version}",
-  "name": "Client-reconnect",
-  "description": "",
+  "name": "ClientReconnect",
+  "description": "サーバー切断時に自動で再接続するMOD",
   "authors": [],
   "contact": {},
   "license": "All-Rights-Reserved",
-  "icon": "assets/client-reconnect/icon.png",
   "environment": "client",
   "entrypoints": {
-    "client": [
-      "net.simohaya.clientReconnect.client.ClientReconnectClient"
-    ],
     "main": [
       "net.simohaya.clientReconnect.ClientReconnect"
+    ],
+    "client": [
+      "net.simohaya.clientReconnect.client.ClientReconnectClient"
     ]
   },
   "mixins": [
